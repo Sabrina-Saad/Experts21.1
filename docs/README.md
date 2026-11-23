@@ -18,6 +18,7 @@
 | 06 | [Staffing](06-staffing.md) | Team by phase, salaries, contributor network, expert-agent ↔ human-owner map | Org / hiring |
 | 07 | [Marketing](07-marketing.md) | Positioning, channels, partnerships, funnel, KPIs, seasonal calendar | Marketing & content |
 | 08 | [Risks](08-risks.md) | 16 ranked risks with mitigations, top-3 board risks, early-warning metrics | Risk |
+| — | [Expert Roster](expert-roster.md) | 39 advisory expert agents with one-line job descriptions, 44 shared skills, and which agents use each skill | All agents |
 
 ## Executive summary
 
