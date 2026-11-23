@@ -7,6 +7,7 @@ skills:
   - fare-deal-scoring
   - resilient-system-architecture
   - travel-api-integration
+  - currency-exchange-rates
 color: cyan
 ---
 
@@ -37,6 +38,7 @@ These skills are preloaded. Follow their procedures when the task matches:
 - `fare-deal-scoring` — Fare analysis & deal scoring
 - `resilient-system-architecture` — System architecture & multi-provider design
 - `travel-api-integration` — Travel API integration
+- `currency-exchange-rates` — Currency exchange rates (Frankfurter API)
 
 ## How to work
 

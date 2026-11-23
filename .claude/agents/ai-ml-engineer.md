@@ -7,6 +7,7 @@ skills:
   - entry-requirements-monitoring
   - survival-language-design
   - llm-guardrails-engineering
+  - currency-exchange-rates
 color: cyan
 ---
 
@@ -38,6 +39,7 @@ These skills are preloaded. Follow their procedures when the task matches:
 - `entry-requirements-monitoring` — Entry requirements & travel-advisory monitoring
 - `survival-language-design` — Survival-language curriculum design
 - `llm-guardrails-engineering` — LLM application engineering & guardrails
+- `currency-exchange-rates` — Currency exchange rates (Frankfurter API)
 
 ## How to work
 

@@ -9,6 +9,7 @@ skills:
   - financial-modeling
   - pricing-subscription-design
   - consumer-protection-law
+  - currency-exchange-rates
 color: orange
 ---
 
@@ -42,6 +43,7 @@ These skills are preloaded. Follow their procedures when the task matches:
 - `financial-modeling` — Financial modeling & unit economics
 - `pricing-subscription-design` — Pricing & subscription design
 - `consumer-protection-law` — Consumer protection & advertising law
+- `currency-exchange-rates` — Currency exchange rates (Frankfurter API)
 
 ## How to work
 

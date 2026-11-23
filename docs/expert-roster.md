@@ -2,7 +2,7 @@
 
 > **Purpose:** The experts a consultant needs around them to advise on this project. Each one is built as a Claude Code subagent in `.claude/agents/<agent>.md`, and each skill as a project skill in `.claude/skills/<skill>/SKILL.md`. Built from the research in this folder ([README](README.md), [01 Market](01-market.md), [02 Target Customers](02-target-customers.md), [03 Competitors](03-competitors.md), [04 Costs](04-startup-and-operating-costs.md), [05 Permits & Licenses](05-permits-and-licenses.md), [06 Staffing](06-staffing.md), [07 Marketing](07-marketing.md), [08 Risks](08-risks.md)). See [`CLAUDE.md`](../CLAUDE.md) for how to use the team.
 
-**41 agents · 46 skills.** Skills are shared: each skill is written once and preloaded into every agent that lists it in its `skills:` field.
+**41 agents · 47 skills.** Skills are shared: each skill is written once and preloaded into every agent that lists it in its `skills:` field.
 
 ## How to read this file
 
@@ -33,7 +33,7 @@
 |---|---|---|---|---|---|
 | BIZ-01 | `engagement-lead` | **Engagement Lead** | Runs the consulting engagement: scope, workplan, decision log, deliverables and status reports for the consultant. | README, ROSTER, 08 | `source-verification`, `business-model-evaluation`, `executive-synthesis`, `llm-guardrails-engineering`, `hiring-org-design`, `risk-assessment-insurance`, `pr-crisis-comms`, `expert-orchestration` |
 | BIZ-02 | `business-strategist` | **Business Strategist** | Owns positioning, business-model choices (affiliate → partner booking → merchant of record) and the phased roadmap. | 01, 03, 04, 08 | `travel-statistics-analysis`, `market-sizing`, `competitor-tracking`, `business-model-evaluation`, `roadmap-prioritization`, `executive-synthesis`, `financial-modeling`, `fundraising-materials`, `risk-assessment-insurance` |
-| BIZ-03 | `market-research-analyst` | **Market Research Analyst** | Sizes and tracks U.S. outbound travel demand (NTTO, passport issuance, OTA volumes) and keeps the TAM/SAM/SOM current. | 01 | `source-verification`, `travel-statistics-analysis`, `market-sizing` |
+| BIZ-03 | `market-research-analyst` | **Market Research Analyst** | Sizes and tracks U.S. outbound travel demand (NTTO, passport issuance, OTA volumes) and keeps the TAM/SAM/SOM current. | 01 | `source-verification`, `travel-statistics-analysis`, `market-sizing`, `currency-exchange-rates` |
 | BIZ-04 | `customer-insights-researcher` | **Customer Insights Researcher** | Validates the personas and their travel fears through surveys and interviews, and turns findings into jobs-to-be-done. | 02 | `source-verification`, `travel-statistics-analysis`, `survey-interview-design`, `persona-jtbd-mapping` |
 | BIZ-05 | `competitive-intelligence-analyst` | **Competitive Intelligence Analyst** | Monitors OTAs, Google Flights, deal clubs, AI planners and language apps, and flags moves that threaten our position. | 03 | `source-verification`, `competitor-tracking` |
 | BIZ-06 | `travel-distribution-expert` | **Travel Industry & Distribution Expert** | Explains how airlines, hotels, OTAs, GDS/NDC, host agencies and affiliate networks make money and what they will let us do. | 03, 04, 05 | `source-verification`, `business-model-evaluation`, `travel-distribution-economics`, `travel-regulatory-compliance`, `partnership-negotiation` |
@@ -44,18 +44,18 @@
 
 | ID | Agent | Expert | One-line job description | Primary docs | Skills |
 |---|---|---|---|---|---|
-| DOM-01 | `destination-expert` | **Destination & Local Experiences Expert** | Curates first-timer-friendly destinations and the 'touristy vs. off-the-path' picks, and manages the local contributor network. | 02, 06 | `source-verification`, `persona-jtbd-mapping`, `destination-curation`, `editorial-freshness`, `contractor-management`, `copywriting` |
+| DOM-01 | `destination-expert` | **Destination & Local Experiences Expert** | Curates first-timer-friendly destinations and the 'touristy vs. off-the-path' picks, and manages the local contributor network. | 02, 06 | `source-verification`, `persona-jtbd-mapping`, `destination-curation`, `editorial-freshness`, `contractor-management`, `copywriting`, `currency-exchange-rates` |
 | DOM-02 | `entry-safety-expert` | **Entry Requirements & Traveler Safety Expert** | Keeps passport, visa, UK ETA, EU EES/ETIAS, State Dept advisory, STEP and health guidance accurate and up to date. | 01, 08 | `source-verification`, `entry-requirements-monitoring`, `traveler-crisis-response`, `editorial-freshness` |
 | DOM-03 | `language-learning-specialist` | **Language Learning Specialist** | Designs destination-specific survival-language packs and pronunciation practice, and runs native-speaker review. | 02, 03 | `survival-language-design`, `editorial-freshness` |
-| DOM-04 | `fare-deals-expert` | **Flight Deals & Fare Expert** | Defines what counts as a 'good deal' per route and season, and how fare alerts should be scored and explained to beginners. | 03, 07 | `source-verification`, `travel-distribution-economics`, `fare-deal-scoring`, `lifecycle-marketing` |
+| DOM-04 | `fare-deals-expert` | **Flight Deals & Fare Expert** | Defines what counts as a 'good deal' per route and season, and how fare alerts should be scored and explained to beginners. | 03, 07 | `source-verification`, `travel-distribution-economics`, `fare-deal-scoring`, `lifecycle-marketing`, `currency-exchange-rates` |
 
 ### Technical (7)
 
 | ID | Agent | Expert | One-line job description | Primary docs | Skills |
 |---|---|---|---|---|---|
 | TEC-01 | `solutions-architect` | **Solutions Architect** | Designs the overall system, including a provider-agnostic layer so no single travel API can take the product down. | 04, 08 | `roadmap-prioritization`, `resilient-system-architecture`, `travel-api-integration`, `llm-guardrails-engineering`, `app-development-offline`, `security-privacy-engineering` |
-| TEC-02 | `travel-api-engineer` | **Travel API & Integrations Engineer** | Integrates Duffel, affiliate networks, lodging, eSIM, insurance and tour APIs, and builds the fare-tracking engine. | 04 | `travel-distribution-economics`, `fare-deal-scoring`, `resilient-system-architecture`, `travel-api-integration` |
-| TEC-03 | `ai-ml-engineer` | **AI / ML Engineer** | Builds the trip-planning assistant, personalization and translation features, with guardrails and human escalation. | 06, 08 | `fare-deal-scoring`, `entry-requirements-monitoring`, `survival-language-design`, `llm-guardrails-engineering` |
+| TEC-02 | `travel-api-engineer` | **Travel API & Integrations Engineer** | Integrates Duffel, affiliate networks, lodging, eSIM, insurance and tour APIs, and builds the fare-tracking engine. | 04 | `travel-distribution-economics`, `fare-deal-scoring`, `resilient-system-architecture`, `travel-api-integration`, `currency-exchange-rates` |
+| TEC-03 | `ai-ml-engineer` | **AI / ML Engineer** | Builds the trip-planning assistant, personalization and translation features, with guardrails and human escalation. | 06, 08 | `fare-deal-scoring`, `entry-requirements-monitoring`, `survival-language-design`, `llm-guardrails-engineering`, `currency-exchange-rates` |
 | TEC-04 | `fullstack-mobile-engineer` | **Full-Stack & Mobile Engineer** | Builds the web app, mobile apps and offline features (phrasebook, emergency card, guides). | 04 | `resilient-system-architecture`, `travel-api-integration`, `app-development-offline`, `seo-ai-search` |
 | TEC-05 | `ux-ui-designer` | **UX / UI Designer** | Designs a calm, accessible experience that works for nervous 22-year-olds and 65-year-olds alike. | 02 | `survey-interview-design`, `persona-jtbd-mapping`, `roadmap-prioritization`, `app-development-offline`, `accessible-calm-ux` |
 | TEC-06 | `data-analytics-engineer` | **Data & Analytics Engineer** | Builds tracking, dashboards and experiments for funnel, retention, CAC/LTV and affiliate earnings. | 04, 07, 08 | `product-analytics-experiments`, `privacy-law-compliance`, `seo-ai-search`, `paid-acquisition` |
@@ -75,8 +75,8 @@
 
 | ID | Agent | Expert | One-line job description | Primary docs | Skills |
 |---|---|---|---|---|---|
-| FIN-01 | `cfo` | **CFO / Financial Modeler** | Owns the financial model, burn, runway, unit economics and break-even plan. | 04 | `market-sizing`, `business-model-evaluation`, `executive-synthesis`, `hiring-org-design`, `financial-modeling`, `fundraising-materials`, `accounting-tax`, `risk-assessment-insurance` |
-| FIN-02 | `pricing-strategist` | **Pricing & Monetization Strategist** | Designs free vs. premium tiers, subscription pricing, concierge pricing and the affiliate revenue mix. | 03, 04 | `competitor-tracking`, `travel-distribution-economics`, `product-analytics-experiments`, `financial-modeling`, `pricing-subscription-design`, `consumer-protection-law` |
+| FIN-01 | `cfo` | **CFO / Financial Modeler** | Owns the financial model, burn, runway, unit economics and break-even plan. | 04 | `market-sizing`, `business-model-evaluation`, `executive-synthesis`, `hiring-org-design`, `financial-modeling`, `fundraising-materials`, `accounting-tax`, `risk-assessment-insurance`, `currency-exchange-rates` |
+| FIN-02 | `pricing-strategist` | **Pricing & Monetization Strategist** | Designs free vs. premium tiers, subscription pricing, concierge pricing and the affiliate revenue mix. | 03, 04 | `competitor-tracking`, `travel-distribution-economics`, `product-analytics-experiments`, `financial-modeling`, `pricing-subscription-design`, `consumer-protection-law`, `currency-exchange-rates` |
 | FIN-03 | `fundraising-advisor` | **Fundraising & Investor Relations Advisor** | Prepares the pitch, data room and seed raise ($1.5M–$3M) and manages investor communications. | 01, 04, README | `travel-statistics-analysis`, `market-sizing`, `executive-synthesis`, `financial-modeling`, `fundraising-materials`, `partnership-negotiation` |
 | FIN-04 | `accounting-tax-advisor` | **Accounting & Tax Advisor** | Handles bookkeeping, sales tax on digital subscriptions, app-store revenue accounting and entity tax matters. | 04, 05 | `source-verification`, `accounting-tax` |
 
@@ -96,7 +96,7 @@
 |---|---|---|---|---|---|
 | MKT-01 | `brand-strategist` | **Brand Strategist** | Owns the 'first trip abroad, without the fear' positioning, brand voice and visual identity. | 07 | `competitor-tracking`, `persona-jtbd-mapping`, `accessible-calm-ux`, `brand-voice`, `copywriting`, `creator-program`, `pr-crisis-comms` |
 | MKT-02 | `growth-marketer` | **Growth & Performance Marketer** | Runs paid tests, referral loops and funnel optimization, and keeps blended CAC under target. | 04, 07 | `product-analytics-experiments`, `financial-modeling`, `consumer-protection-law`, `paid-acquisition`, `lifecycle-marketing` |
-| MKT-03 | `seo-content-lead` | **SEO & Content Marketing Lead** | Builds the content hub ('Do I need a visa for…', '[City] for first-timers') and makes it citable by AI search. | 07 | `source-verification`, `entry-requirements-monitoring`, `destination-curation`, `editorial-freshness`, `brand-voice`, `copywriting`, `seo-ai-search` |
+| MKT-03 | `seo-content-lead` | **SEO & Content Marketing Lead** | Builds the content hub ('Do I need a visa for…', '[City] for first-timers') and makes it citable by AI search. | 07 | `source-verification`, `entry-requirements-monitoring`, `destination-curation`, `editorial-freshness`, `brand-voice`, `copywriting`, `seo-ai-search`, `currency-exchange-rates` |
 | MKT-04 | `social-creator-manager` | **Social Media & Creator Partnerships Manager** | Runs short-form video series and the micro-creator program on TikTok, Reels and YouTube. | 02, 07 | `persona-jtbd-mapping`, `destination-curation`, `consumer-protection-law`, `brand-voice`, `copywriting`, `creator-program`, `partnership-negotiation` |
 | MKT-05 | `lifecycle-crm-marketer` | **Lifecycle & CRM Marketer** | Owns fare-alert email and push, onboarding, free-to-paid conversion, renewal and 'plan your next trip' journeys. | 07 | `fare-deal-scoring`, `product-analytics-experiments`, `pricing-subscription-design`, `consumer-protection-law`, `privacy-law-compliance`, `copywriting`, `lifecycle-marketing` |
 | MKT-06 | `pr-communications-lead` | **PR & Communications Lead** | Runs the annual First-Time Traveler Fear Index, explainers when entry rules change, and crisis communications. | 07, 08 | `source-verification`, `travel-statistics-analysis`, `survey-interview-design`, `entry-requirements-monitoring`, `traveler-crisis-response`, `brand-voice`, `copywriting`, `pr-crisis-comms` |
@@ -151,12 +151,14 @@
 | SK-44 | `pr-crisis-comms` | **PR, media relations & crisis communications** | Writes press releases, runs the data-led PR survey, handles rapid-response explainers and crisis statements. | `engagement-lead`, `traveler-support-lead`, `brand-strategist`, `pr-communications-lead` |
 | SK-45 | `expert-orchestration` | **Expert orchestration** | Routes a question to the right expert agents, runs them in parallel, has them challenge each other, and returns one combined answer. | `orchestrator`, `engagement-lead` |
 | SK-46 | `agent-skill-authoring` | **Agent & skill authoring** | Creates, updates and validates project subagents and skills so the expert team stays consistent. | `team-builder` |
+| SK-47 | `currency-exchange-rates` | **Currency exchange rates (Frankfurter API)** | Gets current and historical exchange rates from the Frankfurter API (ECB reference rates, no key) and turns them into dollar costs, budgets and trends. | `market-research-analyst`, `destination-expert`, `fare-deals-expert`, `travel-api-engineer`, `ai-ml-engineer`, `cfo`, `pricing-strategist`, `seo-content-lead` |
 
 ## Part 3 — Most-shared skills
 
 | Skill | Number of agents |
 |---|---|
 | `source-verification` | 15 |
+| `currency-exchange-rates` | 8 |
 | `persona-jtbd-mapping` | 6 |
 | `executive-synthesis` | 6 |
 | `entry-requirements-monitoring` | 6 |

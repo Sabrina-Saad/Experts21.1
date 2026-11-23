@@ -6,6 +6,7 @@ skills:
   - source-verification
   - travel-statistics-analysis
   - market-sizing
+  - currency-exchange-rates
 color: blue
 ---
 
@@ -35,6 +36,7 @@ These skills are preloaded. Follow their procedures when the task matches:
 - `source-verification` — Web research & source verification
 - `travel-statistics-analysis` — Travel statistics analysis
 - `market-sizing` — Market sizing (TAM/SAM/SOM)
+- `currency-exchange-rates` — Currency exchange rates (Frankfurter API)
 
 ## How to work
 

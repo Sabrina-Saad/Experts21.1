@@ -18,7 +18,7 @@
 | 06 | [Staffing](06-staffing.md) | Team by phase, salaries, contributor network, expert-agent ↔ human-owner map | Org / hiring |
 | 07 | [Marketing](07-marketing.md) | Positioning, channels, partnerships, funnel, KPIs, seasonal calendar | Marketing & content |
 | 08 | [Risks](08-risks.md) | 16 ranked risks with mitigations, top-3 board risks, early-warning metrics | Risk |
-| — | [Expert Roster](expert-roster.md) | 41 expert agents (39 advisors + orchestrator + team-builder) with job descriptions, 46 shared skills, and which agents use each skill. Built as `.claude/agents/` and `.claude/skills/` — see [`CLAUDE.md`](../CLAUDE.md) | All agents |
+| — | [Expert Roster](expert-roster.md) | 41 expert agents (39 advisors + orchestrator + team-builder) with job descriptions, 47 shared skills, and which agents use each skill. Built as `.claude/agents/` and `.claude/skills/` — see [`CLAUDE.md`](../CLAUDE.md) | All agents |
 | — | [Deliverables](deliverables/README.md) | Where agents save lasting outputs and the decision log | All agents |
 
 ## Executive summary

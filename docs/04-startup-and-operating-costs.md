@@ -47,6 +47,7 @@ All figures are **planning estimates in USD** for a U.S.-based startup. Ranges r
 | **Google Flights** | — | No public API | Can't legally scrape at scale |
 | **Hotel APIs** (Booking.com/Expedia Rapid affiliate, Hotelbeds, LiteAPI) | Lodging | Commission-based | Expedia Rapid requires approval |
 | **Activities** (Viator, GetYourGuide, Klook affiliates) | Tours | ~8% commission | |
+| **Frankfurter** (api.frankfurter.dev) | Currency exchange rates for budgets, price display and dollar-strength trends | **Free, no key** (open source; ECB reference rates, ~30 currencies, updated each working day) | In use by the expert team (`scripts/fx.py`). Doesn't cover some destination currencies (e.g., VND, COP, CRC, PEN), so a second source is needed for those |
 | **eSIM** (Airalo, Holafly affiliate) | Connectivity | ~10–20% commission | High conversion for first-timers |
 | **Travel insurance** (SafetyWing, World Nomads, Squaremouth, Faye affiliates) | Insurance | ~10–30% commission | Insurance referral may need a license in some states — see licenses doc |
 

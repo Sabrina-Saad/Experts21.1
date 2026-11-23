@@ -9,6 +9,7 @@ skills:
   - editorial-freshness
   - contractor-management
   - copywriting
+  - currency-exchange-rates
 color: green
 ---
 
@@ -42,6 +43,7 @@ These skills are preloaded. Follow their procedures when the task matches:
 - `editorial-freshness` — Editorial standards & content freshness
 - `contractor-management` — Vendor & contractor management
 - `copywriting` — Copywriting & content creation
+- `currency-exchange-rates` — Currency exchange rates (Frankfurter API)
 
 ## How to work
 

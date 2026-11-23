@@ -11,6 +11,7 @@ skills:
   - fundraising-materials
   - accounting-tax
   - risk-assessment-insurance
+  - currency-exchange-rates
 color: orange
 ---
 
@@ -45,6 +46,7 @@ These skills are preloaded. Follow their procedures when the task matches:
 - `fundraising-materials` — Fundraising & investor materials
 - `accounting-tax` — Accounting, tax & revenue recognition
 - `risk-assessment-insurance` — Risk assessment & insurance
+- `currency-exchange-rates` — Currency exchange rates (Frankfurter API)
 
 ## How to work
 

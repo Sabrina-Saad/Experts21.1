@@ -2,7 +2,7 @@
 
 This project is an advisory team of Claude Code subagents. The team helps a consultant plan and build a travel platform for Americans who want to travel internationally but feel unprepared or nervous. The platform covers fare tracking and deals, step-by-step trip guidance, survival language, and touristy and off-the-beaten-path places.
 
-The team has **41 agents** and **46 skills**, all stored inside this project.
+The team has **41 agents** and **47 skills**, all stored inside this project.
 
 ## What's where
 
@@ -15,6 +15,7 @@ The team has **41 agents** and **46 skills**, all stored inside this project.
 | `.claude/agents/<name>.md` | One subagent per expert (YAML frontmatter plus a system prompt) |
 | `.claude/skills/<name>/SKILL.md` | One shared skill per capability. An agent preloads every skill listed in its `skills:` field |
 | `scripts/validate_team.py` | Checks that agents, skills, the roster and this file all agree |
+| `scripts/fx.py` | Currency exchange rates from the Frankfurter API (see External APIs below) |
 
 ## The team
 
@@ -86,6 +87,16 @@ The team-builder edits `.claude/agents/`, `.claude/skills/` and `docs/expert-ros
 - **Amadeus Self-Service APIs shut down on July 17, 2026.**
 - **Economics:** blended ARPU target is $20–$45 per user per year, so growth must come mostly from organic channels. Keep LTV:CAC at 3:1 or better.
 - **Top 3 risks:** CAC vs. LTV, commoditization by Google and AI planners, and the accuracy of safety and entry guidance.
+
+## External APIs
+
+| API | What it's for | Key | How agents use it |
+|---|---|---|---|
+| **Frankfurter** (`https://api.frankfurter.dev`) | Current and historical exchange rates (European Central Bank reference rates), about 30 currencies | None needed | `python3 scripts/fx.py latest USD EUR,GBP,JPY`, `convert 1500 USD EUR`, `history USD JPY 2026-01-01`, `currencies`; or the URLs in the `currency-exchange-rates` skill |
+
+**API keys:** never write a key into this repository, a file, or chat. Keys are stored as network secrets on the cloud environment, and the proxy adds them to requests to the matching host, so code never sees the key. To add one, ask Claude for that API and name the service; Claude opens a secure form to save it.
+
+**Network access:** cloud sessions for this repo run in the **Experts21.1** environment, whose network allows `api.frankfurter.dev`. Any new API host must be added to that environment before agents can call it.
 
 ## Maintaining the team
 

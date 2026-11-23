@@ -10,6 +10,7 @@ skills:
   - brand-voice
   - copywriting
   - seo-ai-search
+  - currency-exchange-rates
 color: pink
 ---
 
@@ -43,6 +44,7 @@ These skills are preloaded. Follow their procedures when the task matches:
 - `brand-voice` — Brand positioning & voice
 - `copywriting` — Copywriting & content creation
 - `seo-ai-search` — SEO & AI-search optimization
+- `currency-exchange-rates` — Currency exchange rates (Frankfurter API)
 
 ## How to work
 

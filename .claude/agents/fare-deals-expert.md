@@ -7,6 +7,7 @@ skills:
   - travel-distribution-economics
   - fare-deal-scoring
   - lifecycle-marketing
+  - currency-exchange-rates
 color: green
 ---
 
@@ -38,6 +39,7 @@ These skills are preloaded. Follow their procedures when the task matches:
 - `travel-distribution-economics` — Travel distribution & affiliate economics
 - `fare-deal-scoring` — Fare analysis & deal scoring
 - `lifecycle-marketing` — Lifecycle, email & push marketing
+- `currency-exchange-rates` — Currency exchange rates (Frankfurter API)
 
 ## How to work
 
